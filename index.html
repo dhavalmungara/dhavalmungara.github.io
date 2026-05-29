@@ -1,106 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dhaval Mungara - Cyber Security Manager</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background-color: #f4f6f8;
-            color: #333;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 25px;
-        }
-        .card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .highlight {
-            color: #0073e6;
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dhaval Mungara - Cyber Security Manager Portfolio, Resume, Skills, Experience, Blog">
+<title>Dhaval Mungara | Portfolio</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+:root {
+    --bg:#f4f6f8; --text:#333; --card:#fff; --primary:#0077ff;
+}
+body.dark { --bg:#0f172a; --text:#e5e7eb; --card:#1e293b; }
+
+body { margin:0; font-family:'Segoe UI'; background:var(--bg); color:var(--text); }
+header { text-align:center; padding:40px; }
+h1{font-size:2.5rem}
+
+.btn{padding:10px 15px;margin:5px;border:none;background:var(--primary);color:#fff;border-radius:6px;cursor:pointer;text-decoration:none}
+.container{max-width:1000px;margin:auto;padding:20px}
+
+.card{
+background:var(--card);padding:20px;margin-bottom:20px;border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+opacity:0;transform:translateY(20px);transition:.6s;
+}
+.card.visible{opacity:1;transform:translateY(0)}
+
+/* Timeline */
+.timeline{border-left:3px solid var(--primary);padding-left:20px}
+.timeline-item{margin-bottom:20px}
+.timeline-item h3{margin:5px 0}
+
+/* Projects */
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.project{padding:15px;border-radius:8px;background:var(--card);box-shadow:0 3px 8px rgba(0,0,0,.1)}
+
+/* Blog */
+.blog-post{margin-bottom:15px}
+
+footer{text-align:center;padding:20px}
+input,textarea{width:100%;padding:10px;margin:10px 0;border-radius:5px;border:1px solid #ccc}
+</style>
 </head>
 
 <body>
 
+<header>
+<h1>Dhaval Mungara</h1>
+<h3>Cyber Security Manager</h3>
+
+<button class="btn" onclick="toggleDark()">🌙 Dark Mode</button>
+<a href="Dhaval_Mungara_CV.pdf" class="btn" download>📄 Resume</a>
+</header>
+
+<div class="container">
+
 <div class="card">
-    <h1>Dhaval Mungara</h1>
-    <h3>Cyber Security Manager</h3>
-
-    <p><strong>Phone:</strong> 9998993551</p>
-    <p><strong>Email:</strong> dhaval27691@gmail.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/dhaval27691">linkedin.com/in/dhaval27691</a></p>
+<h2>About</h2>
+<p>Experienced Cyber Security Manager with 16+ years in enterprise IT, security operations, automation, and infrastructure leadership.</p>
 </div>
 
-<div class="section card">
-    <h2>Objective</h2>
-    <p>Seeking an exciting and dynamic role to leverage skills and experience in delivering tangible results. Eager to contribute to an organization that promotes innovation, learning, and growth.</p>
+<!-- Timeline -->
+<div class="card">
+<h2>Experience Timeline</h2>
+<div class="timeline">
+<div class="timeline-item">
+<h3>SITP (2023 - Present)</h3>
+<p>Cyber Security Manager leading SOC, SIEM, audits and security governance.</p>
+</div>
+<div class="timeline-item">
+<h3>Reliance Industries (2015 - 2023)</h3>
+<p>Senior Manager handling IT operations across Jamnagar & Dahej.</p>
+</div>
+<div class="timeline-item">
+<h3>Microlink (2014 - 2015)</h3>
+<p>AV Support Engineer managing operations.</p>
+</div>
+<div class="timeline-item">
+<h3>Sai InfoSystems (2009 - 2014)</h3>
+<p>Technical Support Engineer managing networks & firewalls.</p>
+</div>
+</div>
 </div>
 
-<div class="section card">
-    <h2>Skills</h2>
-    <ul>
-        <li>Project Management, Team Building, Strategic Planning</li>
-        <li>Firewall: Meraki, Fortinet, Sophos</li>
-        <li>Networking: Cisco, Aruba, Cradlepoint</li>
-        <li>Monitoring: SolarWinds, Zabbix, LibreNMS</li>
-        <li>Scripting: Python, PowerShell</li>
-        <li>Azure DevOps, O365, Power Apps, Power Automate</li>
-        <li>ISO Audits, Risk Management, Disaster Recovery</li>
-    </ul>
+<!-- Projects -->
+<div class="card">
+<h2>Project Showcase</h2>
+<div class="projects">
+<div class="project">
+<h3>Enterprise Cyber Security Implementation</h3>
+<p>Implemented SIEM monitoring, vulnerability management, and threat detection across enterprise.</p>
+</div>
+<div class="project">
+<h3>Network Automation</h3>
+<p>Automated network tasks using Python & PowerShell, reducing manual efforts.</p>
+</div>
+<div class="project">
+<h3>Disaster Recovery Planning</h3>
+<p>Designed DR strategy ensuring business continuity and compliance.</p>
+</div>
+<div class="project">
+<h3>JIO FTTH Deployment</h3>
+<p>Led deployment of broadband infrastructure across regions.</p>
+</div>
+</div>
 </div>
 
-<div class="section card">
-    <h2>Work Experience</h2>
-
-    <h3>SITP – Cyber Security Manager (Oct 2023 – Present)</h3>
-    <p>Leading IT Cyber Security operations with a team of 12. Handling SIEM monitoring, incident response, vendor audits, and IT service governance across India & US.</p>
-
-    <h3>Reliance Industries Ltd (2015 – 2023)</h3>
-    <p>Senior Manager managing IT operations across Jamnagar and Dahej. Led infrastructure and large-scale IT deployments.</p>
-
-    <h3>Microlink Solution Pvt Ltd</h3>
-    <p>AV Support Engineer handling operational IT issues at Reliance Jamnagar.</p>
-
-    <h3>Sai InfoSystems Pvt Ltd</h3>
-    <p>Sr. Technical Engineer managing networks, firewalls, and user support.</p>
+<!-- Blog -->
+<div class="card">
+<h2>Blog (SEO Boost)</h2>
+<div class="blog-post">
+<h4>Top Cyber Security Trends 2026</h4>
+<p>Overview of modern threats, AI in security, and zero trust adoption.</p>
+</div>
+<div class="blog-post">
+<h4>How to Build Secure IT Infrastructure</h4>
+<p>Best practices for enterprise security, networking, and compliance.</p>
+</div>
 </div>
 
-<div class="section card">
-    <h2>Achievements</h2>
-    <ul>
-        <li>Service Excellence Award (2022–2025)</li>
-        <li>Learning Champion Award (2024–2025)</li>
-        <li>CSI Implementation Award</li>
-    </ul>
+<!-- Contact Form -->
+<div class="card" id="contact">
+<h2>Recruiter Inquiry</h2>
+https://formspree.io/f/xgvggnnv
 </div>
 
-<div class="section card">
-    <h2>Certifications</h2>
-    <ul>
-        <li>CISM</li>
-        <li>Project Management Certification</li>
-        <li>CCNP</li>
-    </ul>
 </div>
 
-<div class="section card">
-    <h2>Education</h2>
-    <ul>
-        <li>MBA (IT) – Jaipur National University</li>
-        <li>B.Tech (ECE)</li>
-        <li>Diploma in ECE</li>
-    </ul>
-</div>
+<footer>
+<p>© 2026 Dhaval Mungara | <a href="https://linkedin.com/in/dhaval27691" target="_blank">LinkedIn</a></p>
+</footer>
+
+<script>
+function toggleDark(){document.body.classList.toggle('dark');}
+
+const cards=document.querySelectorAll('.card');
+const obs=new IntersectionObserver(entries=>{
+entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}});
+});
+cards.forEach(c=>obs.observe(c));
+</script>
 
 </body>
 </html>
